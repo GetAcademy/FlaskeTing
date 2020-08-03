@@ -9,17 +9,7 @@ namespace FlaskeTing
 {
     class Program
     {
-        private static string[] operationNames = new[]
-        {
-            "Fylle flaske 1 fra springen",
-            "Fylle flaske 2 fra springen",
-            "Tømme flaske 1 i flaske 2",
-            "Tømme flaske 2 i flaske 1",
-            "Fylle opp flaske 2 med flaske 1",
-            "Fylle opp flaske 1 med flaske 2",
-            "Tømme flaske 1 (kaste vannet)",
-            "Tømme flaske 2 (kaste vannet)",
-        };
+
 
         static void Main(string[] args)
         {
@@ -92,19 +82,6 @@ namespace FlaskeTing
             }
         }
 
-        private static bool UpdateOperations(int[] operations)
-        {
-            int i;
-            for (i = operations.Length - 1; i >= 0; i--)
-            {
-                if (operations[i] < 7)
-                {
-                    operations[i]++;
-                    break;
-                }
-                operations[i] = 0;
-            }
-            return i != -1;
-        }
+        
     }
 }
